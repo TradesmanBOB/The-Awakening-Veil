@@ -175,6 +175,7 @@ footer {
     color: white;
     padding-top: 16px;
     display: block;
+    /* display: none; */
     margin-left: 40px;
     z-index: 10;
 }
@@ -213,6 +214,7 @@ footer {
 
   .mobile-nav {
     display: none;
+    display: block;
     position: fixed;
     top: 0;
     left: -250px;  /* Off-screen initially */
@@ -272,6 +274,22 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.h-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    top: 5rem;
+    background-color: var(--index-back-dark-green);
+    border-radius: 30px;
+}
+
+.h-container h3 {
+    color: var(--h3-gold-yellow);
+    font-size: 1.4rem;
 }
 
 /* intro-scene CSS */
@@ -381,3 +399,8 @@ footer {
     display: flex;
     flex-direction: column;
 }
+
+/* 
+    1520px adjust sizing, mainly of nav
+    900px adjust sizing, mainly of nav, keep main content centered
+ */
