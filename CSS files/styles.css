@@ -176,7 +176,6 @@ footer {
     color: white;
     padding-top: 16px;
     display: block;
-    /* display: none; */
     margin-left: 40px;
     z-index: 10;
 }
@@ -412,7 +411,7 @@ footer {
  /* MEDIA QUERIES 600->1200 */
 
  /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1450px) {
     .sidebar-mobile {
         display: none; /* Keep top nav on extra large devices */
         position: fixed; /* Fix top nav on the left side */
@@ -427,14 +426,100 @@ footer {
     }
 }
 
-
-@media only screen and (min-width: 768) and (max-width: 1200px) {
+@media only screen and (min-width: 1050px) and (max-width: 1450px) {
     .sidebar-mobile {
-        display: block;
+        display: none;
+    }
+
+    .desktop-nav {
+        display: block; /* Hide the sidebar on large devices */
+        position: fixed; /* Fix top nav on the left side */
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 170px; /* Adjust width */
+    }
+
+    /* Index page css */
+    .h-container {
+        width: 100%;
+        padding: 1rem;
+        margin: 0; /* Remove margin */
+        border-radius: 0; /* Remove border radius */
+        max-width: 750px;
+        border-radius: 30px;
+        word-break: break-word; /* Or 'break-all' */
+        overflow-wrap: break-word;
+
+    }
+
+    /* Intro-scene */
+    .intro-scene-main, .intro-scene-alt-main {
+        max-width: 750px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 3rem;
+        word-break: break-word; /* Or 'break-all' */
+        overflow-wrap: break-word;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1050px) {
+    .sidebar-mobile {
+        display: block; /* Ensure top nav is displayed */
+        position: fixed; /* Fix it at the top */
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .sidebar-mobile button {
+        font-size: 30px;
+        background: none;
+        color: var(--h3-gold-yellow);
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 20px; /* Move the hamburger button down from the top */
+        left: 10px;
+        z-index: 100; /* Ensure it stays above the nav */
+    }
+
+    /* Move the entire ul down inside the sidebar-mobile */
+    .sidebar-mobile nav ul {
+        padding-top: 70px; /* Increase padding to move items down */
     }
 
     .desktop-nav {
         display: none; /* Ensure desktop navigation is hidden */
+    }
+
+    /* Index page css */
+    .h-container {
+        width: 100%;
+        padding: 1rem;
+        margin: 0; /* Remove margin */
+        border-radius: 0; /* Remove border radius */
+        max-width: 750px;
+        border-radius: 30px;
+    }
+
+    .h-container h1 {
+        font-size: 2.2rem; /* Adjust font size */
+        margin-bottom: .5rem;
+    }
+
+    .h-container h2 {
+        font-size: 1.6rem; /* Adjust font size */
+        margin-bottom: 1rem;
+    }
+
+    .h-container h3 {
+        font-size: 1.2rem; /* Adjust font size */
     }
 } 
 
@@ -475,6 +560,7 @@ footer {
         display: none;
     }
 
+    /* Index page css */
     .h-container {
         width: 100%;
         padding: 1rem;
@@ -538,10 +624,6 @@ footer {
     .sidebar-mobile nav ul li {
         margin: 20px 0; /* Add space between list items */
     }
-
-    .desktop-nav {
-        display: none;
-    }
 }
 
 /* For screens 600px and below (extra small devices like phones) */
@@ -581,10 +663,36 @@ footer {
         font-size: 1rem;
     }
 
+    /* Index page css */
     .h-container {
         padding: 1rem;
         margin: 0; /* Remove margin */
         max-width: 450px;
         border-radius: 30px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    /* Index page css */
+    .h-container {
+        padding: 1rem;
+        margin: 0; /* Remove margin */
+        max-width: 325px;
+        border-radius: 30px;
+    }
+
+    .h-container h1 {
+        font-size: 1.5rem; /* Adjust font size */
+        margin-bottom: .5rem;
+    }
+
+    .h-container h2 {
+        font-size: 1.2rem; /* Adjust font size */
+        margin-bottom: 1rem;
+    }
+
+    .h-container h3 {
+        font-size: 0.9rem; /* Adjust font size */
     }
 }
