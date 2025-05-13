@@ -74,6 +74,7 @@ ul, ol {
     width: 900px;
     padding: 2rem;
     justify-self: center;
+    outline: 1px solid var(--h3-gold-yellow);
 }
 
 .h-container h1 {
@@ -219,7 +220,7 @@ footer {
     top: 0;
     left: -250px;  /* Off-screen initially */
     height: 100%;
-    background-color: rgba(0, 8, 121, 0.5);
+    background-color: #004211b4;
     z-index: 10;
     transition: left 0.3s ease;
 }
@@ -231,14 +232,14 @@ footer {
 
 .sidebar-mobile {
     display: none; /* Hide top nav by default */
-    color: var(--White);
+    color: var(--white);
     padding: 10px;
 }
   
 .sidebar-mobile .menu-toggle {
     font-size: 30px;
     background: none;
-    color: var(--White);
+    color: var(--white);
     border: none;
     cursor: pointer;
 }
@@ -253,7 +254,7 @@ footer {
 }
   
 .sidebar-mobile nav ul li a {
-    color: var(--White);
+    color: var(--white);
     text-decoration: none;
     padding: 10px 20px;
     display: block;
@@ -290,6 +291,7 @@ footer {
 .h-container h3 {
     color: var(--h3-gold-yellow);
     font-size: 1.4rem;
+    text-align: center;
 }
 
 /* intro-scene CSS */
@@ -404,3 +406,185 @@ footer {
     1520px adjust sizing, mainly of nav
     900px adjust sizing, mainly of nav, keep main content centered
  */
+
+ /* Media queries for the navigation menu */
+
+ /* MEDIA QUERIES 600->1200 */
+
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .sidebar-mobile {
+        display: none; /* Keep top nav on extra large devices */
+        position: fixed; /* Fix top nav on the left side */
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 250px; /* Adjust width */
+    }
+
+    .desktop-nav {
+        display: block; /* Hide the sidebar on extra large devices */
+    }
+}
+
+
+@media only screen and (min-width: 768) and (max-width: 1200px) {
+    .sidebar-mobile {
+        display: block;
+    }
+
+    .desktop-nav {
+        display: none; /* Ensure desktop navigation is hidden */
+    }
+} 
+
+/* For screens 768px and below (portrait tablets and smaller devices) */
+@media only screen and (max-width: 768px) {
+    .sidebar-mobile {
+        display: block; /* Ensure top nav is displayed */
+        position: fixed; /* Fix it at the top */
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    /* Move the entire ul down inside the sidebar-mobile */
+    .sidebar-mobile nav ul {
+        padding-top: 70px; /* Increase padding to move items down */
+    }
+
+    /* Menu toggle button positioning */
+    .sidebar-mobile .menu-toggle {
+        font-size: 30px;
+        background: none;
+        color: var(--h3-gold-yellow);
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 20px; /* Move the hamburger button down from the top */
+        left: 10px;
+        z-index: 100; /* Ensure it stays above the nav */
+    }
+
+    .sidebar-mobile nav ul li {
+        margin: 1.5rem 0; /* Add space between list items */
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .h-container {
+        width: 100%;
+        padding: 1rem;
+        margin: 0; /* Remove margin */
+        border-radius: 0; /* Remove border radius */
+        max-width: 600px;
+        border-radius: 30px;
+    }
+
+    .h-container h1 {
+        font-size: 2rem; /* Adjust font size */
+        margin-bottom: .5rem;
+    }
+
+    .h-container h2 {
+        font-size: 1.4rem; /* Adjust font size */
+        margin-bottom: 1rem;
+    }
+
+    .h-container h3 {
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .main-content {
+        padding: 1rem; /* Add padding */
+        width: 100%; /* Full width */
+        max-width: 600px; /* Limit max width */
+        margin: 0 auto; /* Center the content */
+    }
+}
+
+/* For screens between 600px and 768px (portrait tablets and larger phones) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .sidebar-mobile {
+        display: block; /* Ensure top nav is displayed */
+        position: fixed; /* Fix it at the top */
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    /* Move the entire ul down inside the sidebar-mobile */
+    .sidebar-mobile nav ul {
+        padding-top: 70px; /* Increase padding to move items down */
+    }
+
+    /* Menu toggle button positioning */
+    .sidebar-mobile .menu-toggle {
+        font-size: 30px;
+        background: none;
+        color: white;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 20px; /* Move the hamburger button down from the top */
+        left: 10px;
+        z-index: 100; /* Ensure it stays above the nav */
+    }
+
+    .sidebar-mobile nav ul li {
+        margin: 20px 0; /* Add space between list items */
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+}
+
+/* For screens 600px and below (extra small devices like phones) */
+@media only screen and (max-width: 600px) {
+    .sidebar-mobile {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        z-index: 1; /* Ensure sidebar has correct stacking context */
+    }
+
+    .sidebar-mobile nav ul {
+        padding-top: 80px;
+    }
+
+    .sidebar-mobile .menu-toggle {
+        font-size: 30px;
+        background: none;
+        color: white;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        z-index: 100;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .sidebar-mobile nav ul li {
+        margin: 1rem 0;
+        font-size: 1rem;
+    }
+
+    .h-container {
+        padding: 1rem;
+        margin: 0; /* Remove margin */
+        max-width: 450px;
+        border-radius: 30px;
+    }
+}
