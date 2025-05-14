@@ -23,11 +23,13 @@
 
     /* index */
     --h3-gold-yellow: #f5cc22;
+    --dark-gold-yellow: #ffc400;
     --box-shadow-green: #07bb165d; /* also used for the box shadow of the buttons */
     --index-back-dark-green: #004211; /* also used to background desktop nav */
     --alt-intro-back-green: #63db00;
     --intro-back-green: #12da00;
     --h3-green: #00b42a;
+    --test-green: #1f6b07;
 
     /* Intro Scene Colors */
     --off-white: #e6e6e6;
@@ -45,9 +47,7 @@ img, picture, video, canvas, svg {
     max-width: 100%;
 }
 
-/* input, button, textarea, select {
-
-} */
+/* input, button, textarea, select {} */
 
 a {
     text-decoration: none;
@@ -162,6 +162,7 @@ footer {
     bottom: 0;
     width: 100%;
     font-size: 1rem;
+    z-index: 11;
 }
 
 /* navigation elements */
@@ -172,7 +173,8 @@ footer {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #004211b4;
+    background-color: rgba(0, 66, 17);
+    outline: 1px solid var(--black);
     color: white;
     padding-top: 16px;
     display: block;
@@ -190,12 +192,12 @@ footer {
     margin: 2rem 0;
     box-shadow: 5px 5px 5px 5px var(--box-shadow-green);
     border-style: solid;
-    border-color: #6f65ff5d;
-    background-color: #190dc27a;
+    border-color: var(--intro-back-green);
+    background-color: var(--test-green);
 }
   
 .desktop-nav nav ul li a {
-    color: #95c3f7;
+    color: var(--h3-gold-yellow);
     text-decoration: none;
     padding: 10px 20px;
     display: block;
@@ -203,8 +205,8 @@ footer {
 }
   
 .desktop-nav nav ul li a:hover {
-    background-color: #001b36;
-    color: #b1d3fa;
+    background-color: var(--dark-gold-yellow);
+    color: var(--index-back-dark-green);
     font-weight: bold;
 }
 
@@ -246,10 +248,17 @@ footer {
 .sidebar-mobile nav ul {
     list-style: none;
     padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 30px;
 }
-  
+
 .sidebar-mobile nav ul li {
-    margin: 10px 0;
+    background-color: var(--test-green);
+    box-shadow: 3px 3px 3px 3px var(--box-shadow-green);
+    border: 2px solid var(--intro-back-green);
+    border-radius: 5px;
 }
   
 .sidebar-mobile nav ul li a {
@@ -257,11 +266,13 @@ footer {
     text-decoration: none;
     padding: 10px 20px;
     display: block;
+    color: var(--h3-gold-yellow);
     transition: background-color 0.3s;
 }
   
 .sidebar-mobile nav ul li a:hover {
-    background-color: #575757;
+    background-color: var(--dark-gold-yellow);
+    color: var(--test-green);
 }
 
 /* CSS for the index page */
@@ -293,6 +304,15 @@ footer {
     text-align: center;
 }
 
+/* container-scene-main */
+.container-intro-scene {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1300px;
+}
+
 /* intro-scene CSS */
 
 .intro-scene {
@@ -315,6 +335,10 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
 }
 
 .alternate-intro-a {
@@ -337,8 +361,9 @@ footer {
     max-width: 1200px;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    padding: 3rem;
+    line-height: 2.5;
+    gap: 2rem;
+    padding: 2rem;
 }
 
 .intro-scene-footer {
@@ -364,11 +389,16 @@ footer {
 
 .intro-scene-alt-header {
     background-color: #6d6d6d;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    height: auto;
     padding: 1rem;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .alternate-intro-alt-a {
@@ -391,8 +421,9 @@ footer {
     max-width: 1200px;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    padding: 3rem;
+    line-height: 1.8;
+    gap: 2rem;
+    padding: 2rem;
 }
 
 .intro-scene-alt-footer {
@@ -402,250 +433,287 @@ footer {
 }
 
 /* 
-    1520px adjust sizing, mainly of nav
-    900px adjust sizing, mainly of nav, keep main content centered
- */
-
- /* Media queries for the navigation menu */
-
- /* MEDIA QUERIES 600->1200 */
-
- /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1450px) {
-    .sidebar-mobile {
-        display: none; /* Keep top nav on extra large devices */
-        position: fixed; /* Fix top nav on the left side */
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 250px; /* Adjust width */
-    }
-
-    .desktop-nav {
-        display: block; /* Hide the sidebar on extra large devices */
-    }
-}
-
-@media only screen and (min-width: 1050px) and (max-width: 1450px) {
-    .sidebar-mobile {
-        display: none;
-    }
-
-    .desktop-nav {
-        display: block; /* Hide the sidebar on large devices */
-        position: fixed; /* Fix top nav on the left side */
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 170px; /* Adjust width */
-    }
-
-    /* Index page css */
-    .h-container {
-        width: 100%;
-        padding: 1rem;
-        margin: 0; /* Remove margin */
-        border-radius: 0; /* Remove border radius */
-        max-width: 750px;
-        border-radius: 30px;
-        word-break: break-word; /* Or 'break-all' */
-        overflow-wrap: break-word;
-
-    }
-
-    /* Intro-scene */
-    .intro-scene-main, .intro-scene-alt-main {
-        max-width: 750px;
+    at the 768 breakpoint swap from desktop to mobile
+    along the way start bringing in index, and alternate-intro styles at all breakpoints
+    can likely just copy the styles from the intro-scene to the alternate-intro
+*/
+ 
+/* MEDIA QUERIES 450->1900 */
+@media screen and (max-width: 1900px) {
+    /* intro css */
+    .container-intro-scene, .container-intro-scene-alt {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 2rem;
+        width: 1150px;
+    }
+
+    .intro-scene-main {
+        gap: 2rem;
+        line-height: 2.5;
+        max-width: 100%;
+    }
+
+    .intro-scene-alt-header {
         gap: 1rem;
-        padding: 3rem;
-        word-break: break-word; /* Or 'break-all' */
-        overflow-wrap: break-word;
+        line-height: 2.5;
+        max-width: 800px;
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1050px) {
-    .sidebar-mobile {
-        display: block; /* Ensure top nav is displayed */
-        position: fixed; /* Fix it at the top */
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1;
+@media only screen and (max-width: 1750px) {
+    /* intro css */
+    .container-intro-scene, .container-intro-scene-alt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 1000px;
     }
 
-    .sidebar-mobile button {
-        font-size: 30px;
-        background: none;
-        color: var(--h3-gold-yellow);
-        border: none;
-        cursor: pointer;
-        position: absolute;
-        top: 20px; /* Move the hamburger button down from the top */
-        left: 10px;
-        z-index: 100; /* Ensure it stays above the nav */
+    .intro-scene-main {
+        gap: 2rem;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1520px) {
+    /* intro css */
+    .container-intro-scene, .container-intro-scene-alt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 900px;
     }
 
-    /* Move the entire ul down inside the sidebar-mobile */
-    .sidebar-mobile nav ul {
-        padding-top: 70px; /* Increase padding to move items down */
+    .intro-scene-main {
+        gap: 2rem;
+        line-height: 2;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    /* intro css */
+    .container-intro-scene, .container-intro-scene-alt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 800px;
     }
 
+    .intro-scene-main {
+        gap: 1.5rem;
+        line-height: 1.8;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    /* intro css */
+    .container-intro-scene, .container-intro-scene-alt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 700px;
+    }
+
+    .intro-scene-main {
+        gap: 1.5rem;
+        line-height: 1.8;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    /* intro css */
+    .container-intro-scene, .container-intro-scene-alt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 600px;
+    }
+
+    .intro-scene-main {
+        gap: 1.5rem;
+        line-height: 1.8;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    /* intro css */
+    .container-intro-scene, .container-intro-scene-alt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 500px;
+    }
+
+    .intro-scene-main {
+        gap: 2rem;
+        line-height: 2.5;
+        max-width: 100%;
+    }   
+}
+
+@media only screen and (max-width: 1085px) {
+    /* intro css */
+    .container-intro-scene, .container-intro-scene-alt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 400px;
+    }
+
+    .intro-scene-main {
+        gap: 1.5rem;
+        line-height: 1.8;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 985px) {
+    /* intro css */
+    .container-intro-scene, .container-intro-scene-alt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 350px;
+    }
+
+    .intro-scene-main {
+        gap: 1.5rem;
+        line-height: 1.8;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    /* navigation */
     .desktop-nav {
-        display: none; /* Ensure desktop navigation is hidden */
+        width: 12rem; /* 250px */
+        height: 100vh;
     }
 
-    /* Index page css */
-    .h-container {
-        width: 100%;
+    /* intro css */
+    .container-intro-scene, .container-intro-scene-alt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 400px;
+    }
+
+    .intro-scene-main {
+        gap: 1.5rem;
+        line-height: 1.8;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    /* nav */
+    .desktop-nav {
+        width: 8rem; /* 250px */
+        height: 100vh;
+    }
+
+    /* intro css */
+    .container-intro-scene, .container-intro-scene-alt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 450px;
+    }
+
+    .intro-scene-main {
+        gap: 1.5rem;
+        line-height: 1.8;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* intro css */
+    .container-intro-scene, .container-intro-scene-alt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        width: 650px;
         padding: 1rem;
-        margin: 0; /* Remove margin */
-        border-radius: 0; /* Remove border radius */
-        max-width: 750px;
-        border-radius: 30px;
+    }
+
+    .intro-scene-main {
+        gap: 1rem;
+        line-height: 1.8;
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    /* header css */
+    .h-container {
+        width: 550px;
+        padding: 1rem;
+        margin: 0;
+        border-radius: 15px;
+        max-width: 600px;
     }
 
     .h-container h1 {
-        font-size: 2.2rem; /* Adjust font size */
-        margin-bottom: .5rem;
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
     }
 
     .h-container h2 {
-        font-size: 1.6rem; /* Adjust font size */
+        font-size: 1.4rem;
         margin-bottom: 1rem;
     }
 
     .h-container h3 {
-        font-size: 1.2rem; /* Adjust font size */
-    }
-} 
-
-/* For screens 768px and below (portrait tablets and smaller devices) */
-@media only screen and (max-width: 768px) {
-    .sidebar-mobile {
-        display: block; /* Ensure top nav is displayed */
-        position: fixed; /* Fix it at the top */
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1;
+        font-size: 1rem;
     }
 
-    /* Move the entire ul down inside the sidebar-mobile */
-    .sidebar-mobile nav ul {
-        padding-top: 70px; /* Increase padding to move items down */
-    }
-
-    /* Menu toggle button positioning */
-    .sidebar-mobile .menu-toggle {
-        font-size: 30px;
-        background: none;
-        color: var(--h3-gold-yellow);
-        border: none;
-        cursor: pointer;
-        position: absolute;
-        top: 20px; /* Move the hamburger button down from the top */
-        left: 10px;
-        z-index: 100; /* Ensure it stays above the nav */
-    }
-
-    .sidebar-mobile nav ul li {
-        margin: 1.5rem 0; /* Add space between list items */
-    }
-
+    /* navigation css */
     .desktop-nav {
         display: none;
     }
 
-    /* Index page css */
-    .h-container {
-        width: 100%;
-        padding: 1rem;
-        margin: 0; /* Remove margin */
-        border-radius: 0; /* Remove border radius */
-        max-width: 600px;
-        border-radius: 30px;
-    }
-
-    .h-container h1 {
-        font-size: 2rem; /* Adjust font size */
-        margin-bottom: .5rem;
-    }
-
-    .h-container h2 {
-        font-size: 1.4rem; /* Adjust font size */
-        margin-bottom: 1rem;
-    }
-
-    .h-container h3 {
-        font-size: 1rem; /* Adjust font size */
-    }
-
-    .main-content {
-        padding: 1rem; /* Add padding */
-        width: 100%; /* Full width */
-        max-width: 600px; /* Limit max width */
-        margin: 0 auto; /* Center the content */
-    }
-}
-
-/* For screens between 600px and 768px (portrait tablets and larger phones) */
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-    .sidebar-mobile {
-        display: block; /* Ensure top nav is displayed */
-        position: fixed; /* Fix it at the top */
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1;
-    }
-    
-    /* Move the entire ul down inside the sidebar-mobile */
-    .sidebar-mobile nav ul {
-        padding-top: 70px; /* Increase padding to move items down */
-    }
-
-    /* Menu toggle button positioning */
-    .sidebar-mobile .menu-toggle {
-        font-size: 30px;
-        background: none;
-        color: white;
-        border: none;
-        cursor: pointer;
-        position: absolute;
-        top: 20px; /* Move the hamburger button down from the top */
-        left: 10px;
-        z-index: 100; /* Ensure it stays above the nav */
-    }
-
-    .sidebar-mobile nav ul li {
-        margin: 20px 0; /* Add space between list items */
-    }
-}
-
-/* For screens 600px and below (extra small devices like phones) */
-@media only screen and (max-width: 600px) {
     .sidebar-mobile {
         display: block;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-
-        z-index: 1; /* Ensure sidebar has correct stacking context */
-    }
-
-    .sidebar-mobile nav ul {
-        padding-top: 80px;
+        z-index: 1;
     }
 
     .sidebar-mobile .menu-toggle {
         font-size: 30px;
         background: none;
-        color: white;
+        color: var(--h3-gold-yellow);
         border: none;
         cursor: pointer;
         position: absolute;
@@ -654,45 +722,100 @@ footer {
         z-index: 100;
     }
 
-    .desktop-nav {
-        display: none;
+    .sidebar-mobile nav ul {
+        padding-top: 70px;
     }
 
     .sidebar-mobile nav ul li {
-        margin: 1rem 0;
-        font-size: 1rem;
-    }
 
-    /* Index page css */
-    .h-container {
-        padding: 1rem;
-        margin: 0; /* Remove margin */
-        max-width: 450px;
-        border-radius: 30px;
     }
 }
 
-@media only screen and (max-width: 450px) {
+/* Index page css commented out waiting for translocation to queries
 
-    /* Index page css */
     .h-container {
+        width: 100%;
         padding: 1rem;
-        margin: 0; /* Remove margin */
-        max-width: 325px;
+        margin: 0; /* Remove margin 
+        border-radius: 0; /* Remove border radius 
+        max-width: 750px;
         border-radius: 30px;
-    }
+        word-break: break-word; /* Or 'break-all' 
+        overflow-wrap: break-word;
+
+    .h-container {
+        width: 100%;
+        padding: 1rem;
+        margin: 0; /* Remove margin 
+        border-radius: 0; /* Remove border radius 
+        max-width: 750px;
+        border-radius: 30px;
+
+    .h-container {
+        width: 100%;
+        padding: 1rem;
+        margin: 0;
+        border-radius: 0;
+        max-width: 750px;
+        border-radius: 30px;
 
     .h-container h1 {
-        font-size: 1.5rem; /* Adjust font size */
+        font-size: 2.2rem;
         margin-bottom: .5rem;
-    }
 
     .h-container h2 {
-        font-size: 1.2rem; /* Adjust font size */
+        font-size: 1.6rem;
         margin-bottom: 1rem;
     }
 
     .h-container h3 {
-        font-size: 0.9rem; /* Adjust font size */
+        font-size: 1.2rem;
+    
+    .h-container {
+        width: 100%;
+        padding: 1rem;
+        margin: 0;
+        border-radius: 0;
+        max-width: 600px;
+        border-radius: 30px;
     }
-}
+
+    .h-container h1 {
+        font-size: 2rem;
+        margin-bottom: .5rem;
+
+    .h-container h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+
+    .h-container h3 {
+        font-size: 1rem;
+
+    .main-content {
+        padding: 1rem;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+
+        .h-container {
+        padding: 1rem;
+        margin: 0;
+        max-width: 450px;
+        border-radius: 30px;
+
+        .h-container {
+        padding: 1rem;
+        margin: 0;
+        max-width: 325px;
+        border-radius: 30px;
+
+    .h-container h1 {
+        font-size: 1.5rem;
+        margin-bottom: .5rem;
+
+    .h-container h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+
+    .h-container h3 {
+        font-size: 0.9rem;
