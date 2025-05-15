@@ -439,7 +439,7 @@ footer {
 */
  
 /* MEDIA QUERIES 450->1900 */
-@media screen and (max-width: 1900px) {
+@media screen and (max-width: 1920px) {
     /* intro css */
     .container-intro-scene, .container-intro-scene-alt {
         display: flex;
@@ -461,6 +461,21 @@ footer {
         line-height: 2.5;
         max-width: 800px;
     }
+
+    /* Styles for h elements @ max-width of 1920px */
+    .h-container h1 {
+        font-size: 3.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .h-container h2 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .h-container h3 {
+        font-size: 1.4rem;
+    }
 }
 
 @media only screen and (max-width: 1750px) {
@@ -481,7 +496,33 @@ footer {
 }
 
 @media only screen and (max-width: 1520px) {
-    /* intro css */
+    /* Index css */
+    .container-index {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 850px;
+        margin: 0 auto;
+        /* outline: red 1px solid; */
+    }
+
+    .h-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 800px;
+    }
+
+    .h-container h1 {
+        font-size: 3.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* intro/alt css */
     .container-intro-scene, .container-intro-scene-alt {
         display: flex;
         flex-direction: column;
@@ -499,6 +540,41 @@ footer {
 }
 
 @media only screen and (max-width: 1450px) {
+        /* Index css */
+    .container-index {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 700px;
+        margin: 0 auto;
+        /* outline: red 1px solid; */
+    }
+
+    .h-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 650px;
+    }
+
+    .h-container h1 {
+        font-size: 2.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .h-container h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .h-container h3 {
+        font-size: 1.2rem;
+    }
+
     /* intro css */
     .container-intro-scene, .container-intro-scene-alt {
         display: flex;
@@ -517,6 +593,41 @@ footer {
 }
 
 @media only screen and (max-width: 1300px) {
+        /* Index css */
+    .container-index {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 600px;
+        margin: 0 auto;
+        /* outline: red 1px solid; */
+    }
+
+    .h-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 550px;
+    }
+
+    .h-container h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .h-container h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .h-container h3 {
+        font-size: 1.2rem;
+    }
+
     /* intro css */
     .container-intro-scene, .container-intro-scene-alt {
         display: flex;
@@ -535,6 +646,41 @@ footer {
 }
 
 @media only screen and (max-width: 1250px) {
+        /* Index css */
+    .container-index {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 600px;
+        margin: 0 auto;
+        /* outline: red 1px solid; */
+    }
+
+    .h-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 550px;
+    }
+
+    .h-container h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .h-container h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .h-container h3 {
+        font-size: 1.1rem;
+    }
+
     /* intro css */
     .container-intro-scene, .container-intro-scene-alt {
         display: flex;
@@ -553,6 +699,10 @@ footer {
 }
 
 @media screen and (max-width: 1150px) {
+    .desktop-nav {
+        width: 200px; /* 80% of the original 250px */
+    }
+
     /* intro css */
     .container-intro-scene, .container-intro-scene-alt {
         display: flex;
@@ -571,6 +721,11 @@ footer {
 }
 
 @media only screen and (max-width: 1085px) {
+    /* desktop nav */
+    .desktop-nav {
+        width: 150px; /* 60% of the original 250px */
+    }
+
     /* intro css */
     .container-intro-scene, .container-intro-scene-alt {
         display: flex;
@@ -589,6 +744,41 @@ footer {
 }
 
 @media only screen and (max-width: 985px) {
+        /* Index css */
+    .container-index {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 500px;
+        margin: 0 auto;
+        /* outline: red 1px solid; */
+    }
+
+    .h-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 450px;
+    }
+
+    .h-container h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .h-container h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .h-container h3 {
+        font-size: 1rem;
+    }
+
     /* intro css */
     .container-intro-scene, .container-intro-scene-alt {
         display: flex;
@@ -607,11 +797,7 @@ footer {
 }
 
 @media only screen and (max-width: 950px) {
-    /* navigation */
-    .desktop-nav {
-        width: 12rem; /* 250px */
-        height: 100vh;
-    }
+
 
     /* intro css */
     .container-intro-scene, .container-intro-scene-alt {
@@ -636,6 +822,41 @@ footer {
         width: 8rem; /* 250px */
         height: 100vh;
     }
+    
+    /* Index css */
+    .container-index {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 400px;
+        margin: 0 auto;
+        /* outline: red 1px solid; */
+    }
+
+    .h-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 380px;
+    }
+
+    .h-container h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .h-container h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .h-container h3 {
+        font-size: 1rem;
+    }
 
     /* intro css */
     .container-intro-scene, .container-intro-scene-alt {
@@ -655,6 +876,41 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+    /* Index css */
+    .container-index {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+        margin: 0 auto;
+        /* outline: red 1px solid; */
+    }
+
+    .h-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 540px;
+    }
+
+    .h-container h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .h-container h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .h-container h3 {
+        font-size: 1rem;
+    }
+    
     /* intro css */
     .container-intro-scene, .container-intro-scene-alt {
         display: flex;
@@ -671,29 +927,6 @@ footer {
         line-height: 1.8;
         max-width: 100%;
         padding: 1rem;
-    }
-
-    /* header css */
-    .h-container {
-        width: 550px;
-        padding: 1rem;
-        margin: 0;
-        border-radius: 15px;
-        max-width: 600px;
-    }
-
-    .h-container h1 {
-        font-size: 1.8rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .h-container h2 {
-        font-size: 1.4rem;
-        margin-bottom: 1rem;
-    }
-
-    .h-container h3 {
-        font-size: 1rem;
     }
 
     /* navigation css */
@@ -725,97 +958,112 @@ footer {
     .sidebar-mobile nav ul {
         padding-top: 70px;
     }
-
-    .sidebar-mobile nav ul li {
-
-    }
 }
 
-/* Index page css commented out waiting for translocation to queries
-
-    .h-container {
+@media only screen and (max-width: 600px) {
+    /* Index css */
+    .container-index {
         width: 100%;
         padding: 1rem;
-        margin: 0; /* Remove margin 
-        border-radius: 0; /* Remove border radius 
-        max-width: 750px;
-        border-radius: 30px;
-        word-break: break-word; /* Or 'break-all' 
-        overflow-wrap: break-word;
-
-    .h-container {
-        width: 100%;
-        padding: 1rem;
-        margin: 0; /* Remove margin 
-        border-radius: 0; /* Remove border radius 
-        max-width: 750px;
-        border-radius: 30px;
-
-    .h-container {
-        width: 100%;
-        padding: 1rem;
-        margin: 0;
-        border-radius: 0;
-        max-width: 750px;
-        border-radius: 30px;
-
-    .h-container h1 {
-        font-size: 2.2rem;
-        margin-bottom: .5rem;
-
-    .h-container h2 {
-        font-size: 1.6rem;
-        margin-bottom: 1rem;
     }
 
-    .h-container h3 {
-        font-size: 1.2rem;
-    
     .h-container {
-        width: 100%;
+        width: 90%;
         padding: 1rem;
-        margin: 0;
-        border-radius: 0;
-        max-width: 600px;
-        border-radius: 30px;
     }
-
-    .h-container h1 {
-        font-size: 2rem;
-        margin-bottom: .5rem;
-
-    .h-container h2 {
-        font-size: 1.4rem;
-        margin-bottom: 1rem;
-
-    .h-container h3 {
-        font-size: 1rem;
-
-    .main-content {
-        padding: 1rem;
-        width: 100%;
-        max-width: 600px;
-        margin: 0 auto;
-
-        .h-container {
-        padding: 1rem;
-        margin: 0;
-        max-width: 450px;
-        border-radius: 30px;
-
-        .h-container {
-        padding: 1rem;
-        margin: 0;
-        max-width: 325px;
-        border-radius: 30px;
 
     .h-container h1 {
         font-size: 1.5rem;
-        margin-bottom: .5rem;
+    }
 
     .h-container h2 {
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
 
     .h-container h3 {
         font-size: 0.9rem;
+    }
+
+    /* intro css */
+    .container-intro-scene, .container-intro-scene-alt {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .intro-scene-main {
+        gap: 1rem;
+        line-height: 1.5;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Index css */
+    .container-index {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .h-container {
+        width: 95%;
+        padding: 0.5rem;
+    }
+
+    .h-container h1 {
+        font-size: 1.2rem;
+    }
+
+    .h-container h2 {
+        font-size: 0.9rem;
+    }
+
+    .h-container h3 {
+        font-size: 0.8rem;
+    }
+
+    /* intro css */
+    .container-intro-scene, .container-intro-scene-alt {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .intro-scene-main {
+        gap: 2rem;
+        line-height: 1.8;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    /* Index css */
+    .container-index {
+        width: 100%;
+        padding: 0.25rem;
+    }
+
+    .h-container {
+        width: 100%;
+        padding: 0.25rem;
+    }
+
+    .h-container h1 {
+        font-size: 1rem;
+    }
+
+    .h-container h2 {
+        font-size: 0.8rem;
+    }
+
+    .h-container h3 {
+        font-size: 0.7rem;
+    }
+
+    /* intro css */
+    .container-intro-scene, .container-intro-scene-alt {
+        width: 100%;
+        padding: 0.25rem;
+    }
+
+    .intro-scene-main {
+        gap: 0.25rem;
+        line-height: 1.2;
+    }
+}
