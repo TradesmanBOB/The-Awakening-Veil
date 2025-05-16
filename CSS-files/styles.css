@@ -362,7 +362,7 @@ footer {
     display: flex;
     flex-direction: column;
     line-height: 2.5;
-    gap: 2rem;
+    gap: 3rem;
     padding: 2rem;
 }
 
@@ -451,7 +451,7 @@ footer {
     }
 
     .intro-scene-main {
-        gap: 2rem;
+        gap: 2.8rem;
         line-height: 2.5;
         max-width: 100%;
     }
@@ -490,7 +490,7 @@ footer {
     }
 
     .intro-scene-main {
-        gap: 2rem;
+        gap: 2.5rem;
         max-width: 100%;
     }
 }
@@ -533,7 +533,7 @@ footer {
     }
 
     .intro-scene-main {
-        gap: 2rem;
+        gap: 2.4rem;
         line-height: 2;
         max-width: 100%;
     }
@@ -586,7 +586,7 @@ footer {
     }
 
     .intro-scene-main {
-        gap: 1.5rem;
+        gap: 2rem;
         line-height: 1.8;
         max-width: 100%;
     }
@@ -639,7 +639,7 @@ footer {
     }
 
     .intro-scene-main {
-        gap: 1.5rem;
+        gap: 1.8rem;
         line-height: 1.8;
         max-width: 100%;
     }
@@ -692,7 +692,7 @@ footer {
     }
 
     .intro-scene-main {
-        gap: 1.5rem;
+        /* gap: 1.5rem; */
         line-height: 1.8;
         max-width: 100%;
     }
@@ -710,12 +710,12 @@ footer {
         justify-content: center;
         align-items: center;
         gap: 2rem;
-        width: 500px;
+        width: 550px;
     }
 
     .intro-scene-main {
         gap: 2rem;
-        line-height: 2.5;
+        line-height: 2;
         max-width: 100%;
     }   
 }
@@ -723,7 +723,7 @@ footer {
 @media only screen and (max-width: 1085px) {
     /* desktop nav */
     .desktop-nav {
-        width: 150px; /* 60% of the original 250px */
+        width: 180px; /* 72% of the original 250px */
     }
 
     /* intro css */
@@ -733,7 +733,7 @@ footer {
         justify-content: center;
         align-items: center;
         gap: 2rem;
-        width: 400px;
+        width: 550px;
     }
 
     .intro-scene-main {
@@ -744,6 +744,11 @@ footer {
 }
 
 @media only screen and (max-width: 985px) {
+    /* desktop nav */
+    .desktop-nav {
+        margin: 0;
+    }
+
         /* Index css */
     .container-index {
         display: flex;
@@ -786,7 +791,7 @@ footer {
         justify-content: center;
         align-items: center;
         gap: 2rem;
-        width: 350px;
+        width: 450px;
     }
 
     .intro-scene-main {
@@ -797,7 +802,12 @@ footer {
 }
 
 @media only screen and (max-width: 950px) {
-
+    /* nav */
+    .desktop-nav {
+        width: 12rem; /* 160px */
+        height: 100vh;
+        margin: 0;
+    }
 
     /* intro css */
     .container-intro-scene, .container-intro-scene-alt {
@@ -806,7 +816,7 @@ footer {
         justify-content: center;
         align-items: center;
         gap: 2rem;
-        width: 400px;
+        width: 440px;
     }
 
     .intro-scene-main {
@@ -819,8 +829,9 @@ footer {
 @media only screen and (max-width: 900px) {
     /* nav */
     .desktop-nav {
-        width: 8rem; /* 250px */
+        width: 10rem; /* 160px */
         height: 100vh;
+        margin: 0;
     }
     
     /* Index css */
@@ -923,7 +934,7 @@ footer {
     }
 
     .intro-scene-main {
-        gap: 1rem;
+        gap: 1.2rem;
         line-height: 1.8;
         max-width: 100%;
         padding: 1rem;
