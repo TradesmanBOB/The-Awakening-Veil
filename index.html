@@ -7,48 +7,52 @@
     <link rel="stylesheet" href="./CSS-files/styles.css">
 </head>
 <body class="index-body">
-    <!-- Sidebar (Desktop) -->
-    <div class="desktop-nav">
-        <nav>
-        <ul>
-            <li><a href="index.html">Project Overview</a></li>
-            <li><a href="https://discord.gg/jB3SC4pZTg" target="_blank" rel="noopener noreferrer">Discord</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        </nav>
-    </div>
-
-    <!-- Top Nav (Mobile) -->
-    <div class="sidebar-mobile">
-        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation">☰</button>
-        <nav class="mobile-nav" id="mobile-nav">
+    <!-- Layout Container -->
+    <div class="layout">
+        <!-- Sidebar (Desktop) -->
+        <div class="desktop-nav">
+            <nav>
             <ul>
                 <li><a href="index.html">Project Overview</a></li>
                 <li><a href="https://discord.gg/jB3SC4pZTg" target="_blank" rel="noopener noreferrer">Discord</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-        </nav>
-    </div>  <!-- closes sidebar mobile -->
-    <div class="container-index">
-        <header>
-            <div class="h-container">
-                <h1>The Awakening Veil</h1>
-                <h2>A passage to mastery, one genre at a time.</h2>
-                <!-- A tutorial game. where place if necessary -->
-                <h3>Lessons lie within the lore, waiting to be mastered through a living narrative.</h3>
-            </div>
-        </header>
+            </nav>
+        </div>
 
-        <main class="main-content">
-            <a class="btn btn-intro" href="intro-scene.html">An Intro Scene</a>
-            <a class="btn btn-alt-intro" href="intro-scene-alt.html">Alternate Intro Scene</a>
-        </main> <!-- Closing the main content section of the webpage -->
+        <!-- Top Nav (Mobile) -->
+        <div class="sidebar-mobile">
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation">☰</button>
+            <nav class="mobile-nav" id="mobile-nav">
+                <ul>
+                    <li><a href="index.html">Project Overview</a></li>
+                    <li><a href="https://discord.gg/jB3SC4pZTg" target="_blank" rel="noopener noreferrer">Discord</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>  <!-- closes sidebar mobile -->
+        <div class="container-index">
+            <header>
+                <div class="h-container">
+                    <h1>The Awakening Veil</h1>
+                    <h2>A passage to mastery, one genre at a time.</h2>
+                    <!-- A tutorial game. where place if necessary -->
+                    <h3>Lessons lie within the lore, waiting to be mastered through a living narrative.</h3>
+                </div>
+            </header>
+
+            <main class="main-content">
+                <a class="btn btn-intro" href="intro-scene.html">An Intro Scene</a>
+                <a class="btn btn-alt-intro" href="intro-scene-alt.html">Alternate Intro Scene</a>
+            </main> <!-- Closing the main content section of the webpage -->
+            <footer class="index-footer">
+                <p>&copy; 2023 The Tutorial Game. All rights reserved.</p>
+            </footer>
+        </div>
     </div>
-    <footer class="index-footer">
-        <p>&copy; 2023 The Tutorial Game. All rights reserved.</p>
-    </footer>
+    
     <script src="JavaScript-files/script.js"></script>
 </body>
 </html>
