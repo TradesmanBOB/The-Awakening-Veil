@@ -454,8 +454,12 @@ footer {
         padding-top: 70px;
     }
 
+    .container-index {
+        justify-content: space-between;
+    }
+
     .h-container {
-        margin: 0.5rem 2rem 0rem;
+        margin: 0.0rem 2rem 0rem;
     }
 
     .h-container h1 {
