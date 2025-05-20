@@ -453,6 +453,21 @@ footer {
     .sidebar-mobile nav ul {
         padding-top: 70px;
     }
+
+    .h-container {
+        margin: 0.5rem 2rem 0rem;
+    }
+
+    .h-container h1 {
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+    .h-container h2 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1130px) {
