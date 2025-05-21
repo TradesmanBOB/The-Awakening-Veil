@@ -459,7 +459,7 @@ footer {
     }
 
     .h-container {
-        margin: 0.0rem 2rem 0rem;
+        margin: 2rem 2rem 0rem;
     }
 
     .h-container h1 {
@@ -471,6 +471,51 @@ footer {
         font-size: 1.5rem;
         margin-top: 1rem;
         margin-bottom: 2rem;
+    }
+
+    .h-container h3 {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    .intro-scene-header {
+        padding: 1rem;
+        margin: 1.5rem;
+    }
+
+    .intro-scene-main {
+        padding: 1rem;
+        margin: 0rem 1rem 1rem 1rem;
+    }
+
+    .btn-alt-intro, .btn-intro {
+        font-size: 1.4rem;
+    }
+}
+
+/* max 380 */
+@media only screen and (max-width: 380px) {
+    .h-container {
+        margin: 1rem 2rem 0rem;
+    }
+
+    .h-container h1 {
+        font-size: 1.6rem;
+    }
+
+    .h-container h2 {
+        font-size: 1.2rem;
+        margin: 1rem 0 1.5rem;
+    }
+
+    .h-container h3 {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .btn-alt-intro, .btn-intro {
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
     }
 }
 
