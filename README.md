@@ -20,3 +20,7 @@ Once I choose an intro, the other page will be renamed and rewritten into a seco
 The story is significantly assisted by AI prompting, primarily for help with descriptive scene setting. Though the core ideas and layouts are still my own, I often end up manually rewriting suggestions, sentences, paragraphs, or sections to accommodate even small changes to wording, whether the change is mine or the AI's.
 
 Personally, I am not usually this verbose, but because of the assistance, the story has come out fluffier than my usual writing. As I've been told, the more I write, the more I'll become the kind of writer who can naturally add fluff to a piece.
+
+# Copyright
+
+&copy; 2025 The Awakening Veil. All rights reserved. Unauthorized copying or use prohibited.
