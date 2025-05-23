@@ -1,4 +1,4 @@
-# Awakening Veil
+# The Veil Realms
 
 A tutorial game designed to improve your skills with each genre you enter and explore. Each genre and its challenges help you build skills that can be applied to other games, which is especially beneficial for those who are new or have limited experience in gaming.
 
@@ -23,4 +23,4 @@ Personally, I am not usually this verbose, but because of the assistance, the st
 
 # Copyright
 
-&copy; 2025 The Awakening Veil. All rights reserved. Unauthorized copying or use prohibited.
+&copy; 2025 The Veil Realms. All rights reserved. Unauthorized copying or use prohibited.

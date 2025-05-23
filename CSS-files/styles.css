@@ -90,6 +90,11 @@ ul, ol {
     margin-bottom: 2rem;
 }
 
+.h-container h3 span {
+    color: #00ec37;
+    font-style: italic;
+}
+
 /* update */
 .layout {
     display: flex;
